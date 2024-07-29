@@ -1,0 +1,26 @@
+Maven Goals
+----------------------
+=> Goals are nothing but commands
+=> All maven goals will start with 'mvn'
+
+1. Clean: It will delete a folder which is known as Target folder.
+		Target folder consists of the jar/war files
+Syntax: mvn clean
+
+2. Compile: It will compile the source code of the application. (.java ------> .class)
+Syntax: mvn compile
+
+3. Test: It will perform the unit test execution of the source code
+Syntax: mvn test
+
+4. Package: To package the project as a jar or war file
+Syntax: mvn package
+When we execute the above goal, it will create the TARGET Folder, inside which jar or war file will be available based on the type of application.
+
+5. Install: To install the project as a dependency in the local repo.
+Syntax: mvn install
+
+Process: .java ----> .class ----> Package (jar/war) ----> mvn package ----> Target folder will get created
+
+Note: Multiple maven goals can be executed at a time. (Syntax: mvn compile package)
+Note: All maven goals should be executed from the path wherever the 'pom.xml' file is available
